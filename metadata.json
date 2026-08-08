@@ -1,0 +1,8 @@
+{
+  "name": "Jason Bann Multimedia Design Portfolio",
+  "description": "Jason Bann's Creative Multimedia Designer Portfolio featuring dual vintage art themes: retro-tech dark mode and 80s/90s analog print light mode with interactive parallax.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

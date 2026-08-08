@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jason Bann Portfolio</title>
+  <meta name="description" content="Jason Bann's Graphic Design Portfolio - Showcasing Static and Motion Design expertise with Illustrator, Photoshop, After Effects and more.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <!-- particles.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Enhanced Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Jason Bann</a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item mobile-theme-switcher">
+            <div class="theme-switch-wrapper">
+                <button id="theme-toggle-btn-mobile" class="retro-theme-toggle-btn" aria-label="Toggle Retro Theme">
+                    <span>💻 RETRO-TECH</span>
+                </button>
+            </div>
+        </li>
+      </ul>
+
+      <div class="desktop-theme-switcher">
+        <div class="theme-switch-wrapper">
+            <button id="theme-toggle-btn" class="retro-theme-toggle-btn" aria-label="Toggle Retro Theme">
+                <span>💻 RETRO-TECH</span>
+            </button>
+        </div>
+      </div>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero relative min-h-screen flex items-center justify-center overflow-hidden py-20 pt-28">
+    <!-- Interactive Multimedia Canvas Background -->
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+    
+    <!-- Ambient Overlay Glows -->
+    <div class="hero-glow hero-glow-1" data-parallax-speed="-0.25"></div>
+    <div class="hero-glow hero-glow-2" data-parallax-speed="-0.15"></div>
+
+    <div class="container mx-auto px-6 max-w-7xl relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Hero Content Column -->
+        <div class="lg:col-span-7 text-center lg:text-left flex flex-col items-center lg:items-start hero-text-wrapper" data-parallax-speed="0.04">
+          
+          <!-- Availability Badge -->
+          <div class="inline-flex items-center gap-2.5 px-3.5 sm:px-4 py-2 rounded-full bg-surface/80 border border-primary-blue/30 backdrop-blur-md mb-6 shadow-lg hover:border-accent-cyan/50 transition-all duration-300 max-w-full">
+            <span class="relative flex h-3 w-3 shrink-0">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+            </span>
+            <span class="text-[11px] sm:text-xs font-mono tracking-wide uppercase text-text-primary font-medium truncate">
+              Available for Freelance & Creative Projects
+            </span>
+          </div>
+
+          <!-- Main Title with Dynamic Role Rotator -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-3 sm:mb-4 leading-tight text-text-primary">
+            Hi, I'm <span class="hero-name-gradient">Jason Bann</span>
+          </h1>
+          <div class="inline-flex items-center justify-center lg:justify-start whitespace-nowrap max-w-full overflow-hidden text-ellipsis mb-6 text-base sm:text-xl lg:text-2xl font-medium tracking-normal">
+            <span class="text-text-secondary font-semibold mr-2">Creative</span>
+            <span id="hero-role-typing" class="font-bold text-accent-cyan underline decoration-primary-blue decoration-2 sm:decoration-4 underline-offset-4 sm:underline-offset-8 inline-block whitespace-nowrap">
+              Multimedia Designer
+            </span>
+          </div>
+
+          <!-- Subtitle / Bio Pitch -->
+          <p class="hero-description text-sm sm:text-lg text-text-secondary max-w-2xl mb-6 sm:mb-8 leading-relaxed font-normal">
+            Crafting high-impact motion graphics, static brand identities, video production, and print media. Bringing visual ideas to life with After Effects, Illustrator, Photoshop & 3D.
+          </p>
+
+          <!-- Core Skills / Software Pills -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 mb-8 sm:mb-10">
+            <span class="software-tag tag-ae">
+              
+              Blender
+            </span>
+            <span class="software-tag tag-ai">
+             
+              Illustrator
+            </span>
+            <span class="software-tag tag-ps">
+              
+              Photoshop
+            </span>
+            <span class="software-tag tag-print">
+               
+              Large Print & CNC
+            </span>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap gap-3 sm:gap-4 items-center justify-center lg:justify-start w-full">
+            <a href="gallery.html" class="hero-btn hero-btn-primary group w-full sm:w-auto">
+              <span>Explore My Work</span>
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="https://drive.google.com/uc?export=download&id=1yQhNdYeiDK5lW5Ds5p66D1uF-_NQyVAX" download class="hero-btn hero-btn-secondary group w-full sm:w-auto">
+              <svg class="w-5 h-5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span>Download CV</span>
+            </a>
+            <a href="#contact" class="hero-btn hero-btn-ghost w-full sm:w-auto">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Profile Showcase Column -->
+        <div class="lg:col-span-5 flex justify-center relative mt-8 lg:mt-0" data-parallax-speed="0.08">
+          <div class="hero-profile-wrapper relative tilt-card">
+            <div class="tilt-glare"></div>
+            
+            <!-- Animated Orbit Rings -->
+            <div class="orbit-ring orbit-ring-1"></div>
+            <div class="orbit-ring orbit-ring-2"></div>
+
+            <!-- Floating Software Skill Badges -->
+            <div class="floating-badge badge-ae shadow-2xl">
+              <span class="font-bold text-xs tracking-wider">Ae</span>
+              <span class="text-[9px] opacity-80">Motion</span>
+            </div>
+            <div class="floating-badge badge-ai shadow-2xl">
+              <span class="font-bold text-xs tracking-wider">Ai</span>
+              <span class="text-[9px] opacity-80">Vector</span>
+            </div>
+            <div class="floating-badge badge-ps shadow-2xl">
+              <span class="font-bold text-xs tracking-wider">Ps</span>
+              <span class="text-[9px] opacity-80">Design</span>
+            </div>
+            <div class="floating-badge badge-3d shadow-2xl">
+              <span class="font-bold text-xs tracking-wider">3D</span>
+              <span class="text-[9px] opacity-80">Render</span>
+            </div>
+
+            <!-- Profile Frame -->
+            <div class="hero-profile-frame">
+              <div class="hero-profile-inner">
+                <img src="Profile.jpeg" alt="Jason Bann - Multimedia Designer" class="hero-profile-img">
+                <div class="hero-profile-overlay"></div>
+              </div>
+            </div>
+
+            <!-- Experience / Highlight Badge Card at Bottom -->
+            <div class="hero-experience-card shadow-2xl backdrop-blur-xl">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary-blue to-accent-cyan flex items-center justify-center text-white font-bold text-base shadow-inner">
+                  3+
+                </div>
+                <div>
+                  <div class="font-bold text-xs sm:text-sm text-text-primary leading-tight">Years Creative Expertise</div>
+                  <div class="text-[11px] text-text-secondary">Motion • Print • Digital Media</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Interactive Stats Bar below hero -->
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl bg-surface/50 border border-primary-blue/15 backdrop-blur-md shadow-xl">
+        <div class="text-center p-3 border-r border-text-primary/10 last:border-r-0">
+          <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-accent-cyan">100%</div>
+          <div class="text-xs text-text-secondary mt-1 font-medium">Creative Precision</div>
+        </div>
+        <div class="text-center p-3 border-r border-text-primary/10 last:border-r-0">
+          <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-primary-purple">Motion & Static</div>
+          <div class="text-xs text-text-secondary mt-1 font-medium">Design Workflows</div>
+        </div>
+        <div class="text-center p-3 border-r border-text-primary/10 last:border-r-0">
+          <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-purple to-accent-pink">Large Scale</div>
+          <div class="text-xs text-text-secondary mt-1 font-medium">Print & CNC Production</div>
+        </div>
+        <div class="text-center p-3">
+          <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent-pink to-primary-blue">Interactive</div>
+          <div class="text-xs text-text-secondary mt-1 font-medium">Digital Experiences</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Creative Infinite Marquee Ticker -->
+  <div class="creative-marquee-wrapper my-4" aria-label="Portfolio status announcement">
+    <div class="creative-marquee-track">
+      <div class="creative-marquee-content">
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> WELCOME TO MY PORTFOLIO</span>
+        <span class="marquee-item"><span class="marquee-badge">WORK IN PROGRESS BUILD</span></span>
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> MOTION GRAPHICS & ANIMATION</span>
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> STATIC & PRINT DESIGN SPECIALIST</span>
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> BRAND IDENTITY & VIDEO PRODUCTION</span>
+      </div>
+      <div class="creative-marquee-content" aria-hidden="true">
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> WELCOME TO MY PORTFOLIO</span>
+        <span class="marquee-item"><span class="marquee-badge">WORK IN PROGRESS BUILD</span></span>
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> MOTION GRAPHICS & ANIMATION</span>
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> STATIC & PRINT DESIGN SPECIALIST</span>
+        <span class="marquee-item"><span class="marquee-bullet">✦</span> BRAND IDENTITY & VIDEO PRODUCTION</span>
+      </div>
+    </div>
+  </div>
+
+    <!-- About Section -->
+  <section id="about" class="section relative overflow-hidden">
+    <div class="parallax-bg-orb parallax-orb-cyan absolute w-80 sm:w-96 h-80 sm:h-96 -left-20 top-0 pointer-events-none" data-parallax-speed="-0.15"></div>
+    <div class="container mx-auto px-8 max-w-7xl relative z-10">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-subsection">
+        <div class="about-grid">
+          <div class="card grid-span-2">
+            <p id="about-text" class="text-xl text-text-secondary max-w-3xl mx-auto text-center">
+              As a graphic and multimedia designer, I believe in the power of visual communication to tell a story.
+              My name is Jason Bann, and I thrive on creating immersive experiences, whether through a captivating animated sequence or a thought-provoking graphic.
+              My passion for animation and video games fuels my creativity, providing a constant source of inspiration for bold colors, dynamic motion, and innovative design.
+              I'm committed to delivering unique and impactful solutions that help my clients stand out in a crowded market.
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Experience Subsection -->
+      <div class="about-subsection fade-in">
+        <h3 class="text-3xl font-semibold text-primary-blue mb-8 text-center">Experience</h3>
+        <div class="about-grid">
+          <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-primary-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 p-1">
+                <img class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sNj3-fvOkl1tITT2FqZOFNgZ45kliEGvFw&s" alt="DBSigns logo">
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-lg mb-2">Graphic designer</h4>
+                <p class="text-primary-blue mono text-sm mb-2">DBSigns • 2024-Present</p>
+                <p class="text-text-secondary text-sm">Graphic Design, Large scale print production, CNC Routing, Vinyl cutting (plotter)</p>
+              </div>
+            </div>
+          </div>
+          
+           <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-primary-blue/20 rounded-xl flex items-center justify-center flex-shrink-0 p-1">
+                <img class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMWtNoiDC5Ku1RYwpiAOpLNC1PmBwlDpcxA&s" alt="DBSigns logo">
+              </div>
+
+              <div>
+                <h4 class="font-semibold text-lg mb-2">Student Intern</h4>
+                <p class="text-primary-blue mono text-sm mb-2">Magos Media • 2023 (1 Month)</p>
+                <p class="text-text-secondary text-sm">Social Media Posts</p>
+              </div>
+            </div>
+          </div>
+        
+
+        </div>
+      </div>
+
+
+      <!-- Education Subsection -->
+      <div class="about-subsection fade-in">
+        <h3 class="text-3xl font-semibold text-primary-blue mb-8 text-center">Education</h3>
+        <div class="about-grid">
+          <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-primary-blue/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <img class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-o2joSJkvPh0_nSaH-9JPAOeB-N6cCWxSoQ&s" alt="CTU">
+              </div>
+              <div>
+                <h4 class="font-semibold  text-lg mb-2">FET Certificate: Design Techniques</h4>
+                <p class="text-primary-blue mono text-sm mb-2">CTU Training Solutions • 2023</p>
+                <p class="text-text-secondary text-sm">Advanced design techniques, UX/UI principles, motion graphics, and professional print production workflows.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-accent-cyan/20 rounded-xl flex items-center justify-center flex-shrink-0">
+               <img class="rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-o2joSJkvPh0_nSaH-9JPAOeB-N6cCWxSoQ&s" alt="CTU">
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-2">FET Certificate: Design Foundation</h4>
+                <p class="text-accent-cyan mono text-sm mb-2">CTU Training Solutions • 2022</p>
+                <p class="text-text-secondary text-sm">Core design principles, color theory, typography fundamentals, and digital media creation basics.</p>
+              </div>
+            </div>
+          </div>
+
+           <div class="card">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-accent-cyan/20 rounded-xl flex items-center justify-center flex-shrink-0">
+               <img class="rounded" src="https://florries.co.za/storage/2021/06/H-Florida-Embleem-Volkleur-met-omlyning-RBG-731x1024.png" alt="CTU">
+              </div>
+              <div>
+                <h4 class="font-semibold  text-lg mb-2">National Senior Certificate</h4>
+                <p class="text-accent-cyan mono text-sm mb-2">Hoërskool Florida • 2017-2021</p>
+                <p class="text-text-secondary text-sm">Completion of high school with a strong focus on subjects such as Visual Arts, Computer Applications Technology, and Mathematics Literacy</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Certifications Subsection -->
+      <div class="about-subsection fade-in">
+        <h3 class="text-3xl font-semibold text-accent-cyan mb-8 text-center">Professional Certifications</h3>
+        <div class="about-grid">
+          <div class="card grid-span-2">
+            <div class="grid sm:grid-cols-2 gap-x-6 gap-y-4">
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-gradient-primary rounded-full flex-shrink-0"></div>
+                <span class="text-text-secondary">Adobe Certified Professional - Visual Design</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-gradient-accent rounded-full flex-shrink-0"></div>
+                <span class="text-text-secondary">Adobe Certified Professional - After Effects</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-gradient-primary rounded-full flex-shrink-0"></div>
+                <span class="text-text-secondary">Adobe Certified Professional - Illustrator</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-gradient-accent rounded-full flex-shrink-0"></div>
+                <span class="text-text-secondary">Adobe Certified Professional - InDesign</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-gradient-primary rounded-full flex-shrink-0"></div>
+                <span class="text-text-secondary">Adobe Certified Professional - Photoshop</span>
+              </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-white/10">
+              <p class="text-text-muted text-center text-sm">
+                Comprehensive Adobe Creative Suite certification demonstrating professional-level expertise
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recognition Subsection -->
+      <div class="fade-in">
+        <h3 class="text-3xl font-semibold text-accent-pink mb-8 text-center">Recognition & Achievements</h3>
+        <div class="about-grid">
+          <div class="card text-center grid-span-2">
+            <div class="flex justify-center gap-6 mb-6">
+           <div class="social-grid mb-8">
+        <a href="#" class="social-link2" title="Illustrator">
+          <img src="https://certiport.pearsonvue.com/getattachment/Certifications/Adobe/ACP/Badging/Illustrator/Adobe_Certified_Professional_Adobe_Illustrator_digital_badge.png?lang=en-US&width=601&height=601&ext=.png" alt="Illustrator">
+        </a>
+        <a href="#" class="social-link2" title="Photoshop">
+          <img src="https://certiport.pearsonvue.com/getattachment/Certifications/Adobe/ACP/Badging/Photoshop/Adobe_Certified_Professional_Adobe_Photoshop_digital_badge.png?lang=en-US&width=601&height=601&ext=.png" alt="Photoshop">
+        </a>
+        <a href="#" class="social-link2" title="Indesign">
+          <img src="https://certiport.pearsonvue.com/getattachment/Certifications/Adobe/ACP/Badging/InDesign/Adobe_Certified_Professional_Adobe_InDesign_digital_badge.png?lang=en-US&width=601&height=601&ext=.png" alt="InDesign">
+        </a>
+        <a href="#" class="social-link2" title="After effects">
+          <img src="https://certiport.pearsonvue.com/getattachment/Certifications/Adobe/ACP/Badging/Animate/Adobe_Certified_Professional_Adobe_Animate_digital_badge.png?lang=en-US&width=601&height=601&ext=.png" alt="After effects">
+        </a>
+        <a href="#" class="social-link2" title="Visual Design">
+          <img src="https://images.credly.com/images/19d96e55-f15c-44d9-9568-43f83505bd5b/twitter_thumb_201604_Adobe_Certified_Professional_Visual_Design_digital_badge.png" alt="Visual Design">
+        </a>
+       
+      </div>
+
+            </div>
+            <h4 class="text-lg font-semibold  mb-3">Adobe Certified Professional</h4>
+            <p class="text-text-secondary">Certified across multiple Adobe Creative Suite applications with proven expertise in visual design, digital media creation, and professional design workflows.</p>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="section relative overflow-hidden">
+    <div class="parallax-bg-orb parallax-orb-purple absolute w-[450px] h-[450px] -right-24 top-0 pointer-events-none" data-parallax-speed="-0.18"></div>
+    <div class="container mx-auto px-8 max-w-7xl relative z-10">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+        
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/960px-Adobe_Illustrator_CC_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20251029195730" alt="Illustrator">
+          <h4 class="text-lg font-semibold  mb-2">Adobe Illustrator</h4>
+          <p class="text-text-muted text-sm mb-1">Expert Level • 3+ Years</p>
+          <p class="text-text-secondary text-sm mb-3">Vector graphics, logo design, illustrations, and brand identity systems.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/960px-Adobe_Photoshop_CC_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Photoshop">
+          <h4 class="text-lg font-semibold  mb-2">Adobe Photoshop</h4>
+          <p class="text-text-muted text-sm mb-1">Advanced Level • 3+ Years</p>
+          <p class="text-text-secondary text-sm mb-3">Photo manipulation, digital compositing, and web graphics creation.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Adobe_Indesign_CC_2026_icon.svg/960px-Adobe_Indesign_CC_2026_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="InDesign">
+          <h4 class="text-lg font-semibold  mb-2">Adobe InDesign</h4>
+          <p class="text-text-muted text-sm mb-1">Proficient Level • 2+ Years</p>
+          <p class="text-text-secondary text-sm mb-3">Layout design, print production, and digital publishing.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 75%"></div>
+          </div>
+        </div>
+
+
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Adobe_After_Effects_CC_2026_icon.svg/960px-Adobe_After_Effects_CC_2026_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="After Effects">
+          <h4 class="text-lg font-semibold  mb-2">After Effects</h4>
+          <p class="text-text-muted text-sm mb-1">Intermediate Level • 1+ Years</p>
+          <p class="text-text-secondary text-sm mb-3">Motion graphics, visual effects, and animated content creation.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 45%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/960px-Adobe_Premiere_Pro_CC_icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Premiere Pro">
+          <h4 class="text-lg font-semibold  mb-2">Premiere Pro</h4>
+          <p class="text-text-muted text-sm mb-1">Intermediate Level • 1+ Years</p>
+          <p class="text-text-secondary text-sm mb-3">Skilled in video editing, creating engaging video content, and adding visual effects.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968442.png" alt="Audition">
+          <h4 class="text-lg font-semibold  mb-2">Audition</h4>
+          <p class="text-text-muted text-sm mb-1">Biginner Level • 1 Months</p>
+          <p class="text-text-secondary text-sm mb-3">Audio Production, cutting, mixing</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 2%"></div>
+          </div>
+        </div>
+        
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/960px-Blender_logo_no_text.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Blender">
+          <h4 class="text-lg font-semibold  mb-2">Blender 3D</h4>
+          <p class="text-text-muted text-sm mb-1">Basic Level • 2 Months</p>
+          <p class="text-text-secondary text-sm mb-3">3D modeling, texturing, and product visualization.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 5%"></div>
+          </div>
+        </div>
+
+         <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Unreal_Engine_Logo_%28new_typeface%29.svg/960px-Unreal_Engine_Logo_%28new_typeface%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Unreal Engine">
+          <h4 class="text-lg font-semibold  mb-2">Unreal Engine</h4>
+          <p class="text-text-muted text-sm mb-1">Basic Level • 1 Months</p>
+          <p class="text-text-secondary text-sm mb-3">Exploring game development and real-time rendering</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 2%"></div>
+          </div>
+        </div>
+
+         <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://docs.toonboom.com/images/landing-page-product-icons/harmony.svg" alt="Toon Boom">
+          <h4 class="text-lg font-semibold  mb-2">Toon Boom Harmony</h4>
+          <p class="text-text-muted text-sm mb-1">Basic Level • 1 Month</p>
+          <p class="text-text-secondary text-sm mb-3">2D Animation</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 1%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Moho.png/960px-Moho.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Moho">
+          <h4 class="text-lg font-semibold  mb-2">Moho</h4>
+          <p class="text-text-muted text-sm mb-1">Basic Level • 1 Month</p>
+          <p class="text-text-secondary text-sm mb-3">2D rigged Animation</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 1%"></div>
+          </div>
+        </div>
+
+         <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Affinity_%28App%29_Logo.svg/960px-Affinity_%28App%29_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Web Dev">
+          <h4 class="text-lg font-semibold  mb-2">Affinity</h4>
+          <p class="text-text-muted text-sm mb-1">Basic Level • 1 Months</p>
+          <p class="text-text-secondary text-sm mb-3">Graphic design and illustration</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 5%"></div>
+          </div>
+        </div>
+
+        <div class="skill-card fade-in">
+          <img class="skill-icon" src="https://www.svgrepo.com/show/303205/html-5-logo.svg" alt="Web Dev">
+          <h4 class="text-lg font-semibold  mb-2">Web Development</h4>
+          <p class="text-text-muted text-sm mb-1">Basic Level • 4 Months</p>
+          <p class="text-text-secondary text-sm mb-3">HTML, CSS, and responsive design fundamentals.</p>
+          <div class="skill-level">
+            <div class="skill-progress" style="width: 10%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Gallery Callout Banner -->
+  <div class="my-4 py-6 px-6 bg-surface/60 border-y border-border-color backdrop-blur-md">
+    <div class="container mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        <h3 class="text-xl font-bold text-text-primary mb-1">Explore Interactive Media Gallery</h3>
+        <p class="text-sm text-text-secondary">View video edits, motion graphics reels, static poster designs & brand showcases</p>
+      </div>
+      <a href="gallery.html" class="hero-btn hero-btn-primary text-base flex-shrink-0">
+        Go to Gallery →
+      </a>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section relative overflow-hidden">
+    <div class="parallax-bg-orb parallax-orb-blue absolute w-[500px] h-[500px] left-10 top-0 pointer-events-none" data-parallax-speed="-0.22"></div>
+    <div class="container mx-auto px-8 max-w-7xl relative z-10">
+      <h2 class="section-title">Featured Work</h2>
+      <div class="projects-grid">
+        
+       <div class="project-card fade-in">
+          <div class="project-image bg-gradient-to-br from-purple-600/20 to-blue-600/20 flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-40 h-40 bg-white/5 rounded-2xl flex items-center justify-center mb-4 mx-auto overflow-hidden p-2">
+                <a href="LoneWolf.svg" target="_blank" class="flex items-center justify-center w-full h-full">
+                  <img src="LoneWolf.svg" alt="LoneWolf Logo" class="w-full h-full object-contain text-white" />
+                </a>
+              </div>
+              <h4 class="text-white font-semibold">Personal Creative Brand</h4>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="text-xl font-semibold  mb-2">LoneWolf</h3>
+            <p class="text-text-secondary mb-4">My personal Creative brand and persona, a Creative sandbox where I experiment with different styles and concepts</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-primary-blue/20 text-primary-blue rounded-full text-xs">Animation</span>
+              <span class="px-3 py-1 bg-accent-pink/20 text-accent-pink rounded-full text-xs">Multimedia</span>
+              <span class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan rounded-full text-xs">Experimental</span>
+            </div>
+            <a href="https://linktr.ee/lonewolf_2077" class="text-primary-blue hover:text-accent-cyan transition-colors">View Project →</a>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-image bg-gradient-to-br from-purple-600/20 to-blue-600/20 flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-40 h-40 bg-white/5 rounded-2xl flex items-center justify-center mb-4 mx-auto overflow-hidden p-2">
+                <a href="Ravnyx.svg" target="_blank" class="flex items-center justify-center w-full h-full">
+                  <img src="Ravnyx.svg" alt="LoneWolf Logo" class="w-full h-full object-contain text-white" />
+                </a>
+              </div>
+              <h4 class="text-white font-semibold">Professional Creative Brand</h4>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="text-xl font-semibold  mb-2">Ravnyx Studios</h3>
+            <p class="text-text-secondary mb-4">This is my freelancing brand where I offer my services to clients and do all my professional work</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-primary-blue/20 text-primary-blue rounded-full text-xs">Print</span>
+              <span class="px-3 py-1 bg-accent-pink/20 text-accent-pink rounded-full text-xs">Multimedia</span>
+              <span class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan rounded-full text-xs">Branding</span>
+            </div>
+            <a href="https://linktr.ee/ravnyxstudios" class="text-primary-blue hover:text-accent-cyan transition-colors">View Project →</a>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-image bg-gradient-to-br from-green-600/20 to-teal-600/20 flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2"/>
+                  <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2"/>
+                  <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/>
+                  <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h4 class="text-white font-semibold">Community Projects</h4>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="text-xl font-semibold text-white mb-2">Print Media Projects</h3>
+            <p class="text-text-secondary mb-4">Professional print design work including brochures, business cards, and marketing materials with focus on readability and brand consistency.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-primary-blue/20 text-primary-blue rounded-full text-xs">InDesign</span>
+              <span class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan rounded-full text-xs">Print Production</span>
+              <span class="px-3 py-1 bg-primary-purple/20 text-primary-purple rounded-full text-xs">Layout Design</span>
+            </div>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors">View Gallery →</a>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-image bg-gradient-to-br from-indigo-600/20 to-purple-600/20 flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                  <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/>
+                  <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h4 class="text-white font-semibold">Digital Design</h4>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="text-xl font-semibold text-white mb-2">UI/UX Design Elements</h3>
+            <p class="text-text-secondary mb-4">User interface designs and digital assets for web applications, focusing on user experience and modern design principles.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-accent-pink/20 text-accent-pink rounded-full text-xs">UI Design</span>
+              <span class="px-3 py-1 bg-primary-blue/20 text-primary-blue rounded-full text-xs">Photoshop</span>
+              <span class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan rounded-full text-xs">Web Design</span>
+            </div>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors">Explore →</a>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-image bg-gradient-to-br from-yellow-600/20 to-red-600/20 flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h4 class="text-white font-semibold">Brand Identity</h4>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="text-xl font-semibold text-white mb-2">Logo & Brand Design</h3>
+            <p class="text-text-secondary mb-4">Complete brand identity systems including logos, color palettes, and brand guidelines for various clients and personal projects.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-primary-blue/20 text-primary-blue rounded-full text-xs">Illustrator</span>
+              <span class="px-3 py-1 bg-accent-pink/20 text-accent-pink rounded-full text-xs">Branding</span>
+              <span class="px-3 py-1 bg-primary-purple/20 text-primary-purple rounded-full text-xs">Logo Design</span>
+            </div>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors">View Logos →</a>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-image bg-gradient-to-br from-cyan-600/20 to-blue-600/20 flex items-center justify-center">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9 19c-5 0-5-7-3-11 1-1.6 2.7-3 4-3 2.8 0 3 2 2 4-1 2-3 2.5-2 4 3 1 4-2 4-4 0-5.2-4-8-8-8-4.4 0-8 3.6-8 8 0 4.4 3.6 8 8 8h6" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </div>
+              <h4 class="text-white font-semibold">Experimental</h4>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="text-xl font-semibold text-white mb-2">3D & Experimental Work</h3>
+            <p class="text-text-secondary mb-4">Exploring new creative territories with 3D modeling in Blender and experimental design concepts pushing creative boundaries.</p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan rounded-full text-xs">Blender</span>
+              <span class="px-3 py-1 bg-primary-purple/20 text-primary-purple rounded-full text-xs">3D Modeling</span>
+              <span class="px-3 py-1 bg-accent-pink/20 text-accent-pink rounded-full text-xs">Experimental</span>
+            </div>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors">In Progress →</a>
+            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container mx-auto px-8 max-w-7xl">
+      <h2 class="section-title">Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card">
+          <h3 class="text-xl font-semibold  mb-2">Graphic Design</h3>
+          <p class="text-text-secondary">
+            From logos and branding to marketing materials and social media assets, I create visually stunning designs that communicate your message effectively.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="text-xl font-semibold  mb-2">Motion Graphics</h3>
+          <p class="text-text-secondary">
+            Bring your brand to life with captivating motion graphics, animated logos, and engaging video content that tells your story in a dynamic way.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="text-xl font-semibold  mb-2">Photo manipulation</h3>
+          <p class="text-text-secondary">
+            I specialize in transforming and enhancing your images to create stunning, high-impact visuals. I seamlessly combine and alter elements to bring your creative vision to life and tell a new story.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="text-xl font-semibold  mb-2">Video Editing</h3>
+          <p class="text-text-secondary">
+            I transform your raw video footage into a polished, professional final product. My focus is on creating a clear narrative, enhancing visuals, and ensuring a seamless and engaging experience for your audience.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold  mb-2">Web Design (Basic)</h3>
+          <p class="text-text-secondary">
+            I am not a expert in web but understand enought to make a functional websites
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <marquee class="fade-marquee" style="animation-duration: 15s;">
+      THANKS FOR WATCHING...
+  </marquee>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container mx-auto px-8 max-w-7xl">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="text-center mb-6">
+        <p class="text-xl text-text-secondary max-w-2xl mx-auto">
+          Ready to bring your vision to life? Let's collaborate on your next creative project.
+        </p>
+      </div>
+      
+      <div class="social-grid mb-8">
+        <a href="#" class="social-link" title="YouTube">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/YouTube_play_button_square_%282013-2017%29.svg/2048px-YouTube_play_button_square_%282013-2017%29.svg.png" alt="YouTube">
+        </a>
+        <a href="https://www.instagram.com/jason_bann_designs/" class="social-link" title="Instagram">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://web.facebook.com/BannJason" class="social-link" title="Facebook">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook">
+        </a>
+        <a href="error.html" class="social-link" title="ArtStation">
+          <img src="https://cdn-icons-png.flaticon.com/512/5968/5968657.png" alt="ArtStation">
+        </a>
+        <a href="error.html" class="social-link" title="Reddit">
+          <img src="https://static.wikia.nocookie.net/youtube/images/5/5e/Reddit.jpg/revision/latest?cb=20231216103927" alt="Reddit">
+        </a>
+        <a href=" https://linkedin.com/in/jason-bann" class="social-link" title="LinkedIn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+        </a>
+
+         <a href=" https://github.com/JasonBann" class="social-link" title="Github">
+          <img src="https://avatars.githubusercontent.com/u/9919?s=280&v=4" alt="Github">
+        </a>
+      </div>
+
+      <div class="text-center">
+        <a href="mailto:bannjason@gmail.com" class="btn btn-primary text-lg">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+
+  
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-surface/50 py-12 border-t border-white/5">
+    <div class="container mx-auto px-8 max-w-7xl">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-text-muted">
+          <p>&copy; 2026 Jason Bann. All rights reserved.</p>
+        </div>
+
+        <div class="text-text-muted">
+          <p> This website is a working progress not all Links will Work Properly  </p>
+        </div>
+
+        <div class="flex gap-6">
+          <a href="#" class="text-text-muted hover:text-primary-blue transition-colors">Privacy</a>
+          <a href="#" class="text-text-muted hover:text-primary-blue transition-colors">Terms</a>
+          <a href="#contact" class="text-text-muted hover:text-primary-blue transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top">↑</button>
+
+  <!-- Local JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

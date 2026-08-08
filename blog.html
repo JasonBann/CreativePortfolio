@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Jason Bann Portfolio</title>
+  <meta name="description" content="Thoughts and articles on design, technology, and creative workflows by Jason Bann.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-logo">Jason Bann</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item mobile-theme-switcher">
+            <div class="theme-switch-wrapper">
+                <button id="theme-toggle-btn-mobile" class="retro-theme-toggle-btn" aria-label="Toggle Retro Theme">
+                    <span>💻 RETRO-TECH</span>
+                </button>
+            </div>
+        </li>
+      </ul>
+      <div class="desktop-theme-switcher">
+        <div class="theme-switch-wrapper">
+            <button id="theme-toggle-btn" class="retro-theme-toggle-btn" aria-label="Toggle Retro Theme">
+                <span>💻 RETRO-TECH</span>
+            </button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Blog Section -->
+  <section id="blog" class="section">
+    <div class="container mx-auto px-8 max-w-7xl">
+      <h2 class="section-title">My Blog</h2>
+      <p class="text-center text-xl text-text-secondary max-w-3xl mx-auto mb-16">
+        A collection of my thoughts and articles on design, technology, and creative workflows.
+      </p>
+
+      <div class="blog-grid">
+        
+        <!-- NOTE: To add a new blog post, copy this whole 'blog-card' block. -->
+        <!-- The 'a' tags should link to your specific blog post file, e.g., "blog/post-1.html" -->
+        <div class="blog-card">
+          <a href="javascript:void(0)" class="blog-card-image-link">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2940&auto=format&fit=crop" alt="Laptop with code on screen" class="blog-card-image">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="blog-card-category">Web Design</span>
+              <span class="blog-card-date">October 26, 2023</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="javascript:void(0)">Why I Publish My Websites on GitHub</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              As a designer, streamlining my workflow is just as important as the visual design itself. Here is why I rely on GitHub to publish and manage my web projects
+            </p>
+            <a href="javascript:void(0)" class="blog-card-read-more">Read More →</a>
+          </div>
+
+          
+          <!-- NOTE: This hidden div holds the unique content for THIS blog post's modal. -->
+          <!-- To change the text for this popup, edit the content inside this div. You can use <p> tags for paragraphs. -->
+          <div class="blog-card-full-content" style="display: none;">
+            <p> 
+As a designer, streamlining my workflow is just as important as the visual design itself. Here is why I rely on GitHub to publish and manage my web projects:
+<br>
+Total Peace of Mind: Version control lets me experiment boldly with layouts and code, knowing I can roll back to a stable version instantly if something breaks.
+<br>
+Fast, Free Hosting: GitHub Pages integrates directly with my repositories, offering lightning-fast, secure, and completely free deployment for static websites and portfolios.
+<br>
+Unified Pipeline: Keeping my web assets, personal brand projects, and custom scripts organized in one centralized hub makes updates effortless.
+<br>
+Transparency: Sharing clean, structured code publicly bridges the gap between raw visual design and functional execution.
+<br>
+Publishing on GitHub removes the friction of traditional hosting, letting me focus entirely on building great digital experiences.</p>
+          </div>
+        </div>
+        <!-- End of blog card block -->
+
+        <!-- Example Post 2 -->
+        <div class="blog-card">
+          <a href="javascript:void(0)" class="blog-card-image-link">
+            <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Design tools on a desk" class="blog-card-image">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="blog-card-category">AI</span>
+              <span class="blog-card-date">October 15, 2023</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="javascript:void(0)">Supercharging Design Workflows: How I Use AI for Custom Tool Building</a>
+            </h3>
+            <p class="blog-card-excerpt">
+            The day-to-day reality of production often involves plenty of repetitive grunt work—batch-renaming artboards, organizing complex file structures, and handling layout nesting.
+            </p>
+            <a href="javascript:void(0)" class="blog-card-read-more">Read More →</a>
+          </div>
+          <!-- NOTE: This is the unique content for the 'After Effects Tricks' post. -->
+          <div class="blog-card-full-content" style="display: none;">
+            <p>As a designer, my main focus should always be visual storytelling, branding, and creative problem-solving. However, the day-to-day reality of production often involves plenty of repetitive grunt work—batch-renaming artboards, organizing complex file structures, and handling layout nesting.
+<br>
+Instead of letting manual busywork slow me down, I use AI as an active coding co-pilot to build custom scripts and automation tools that streamline my entire workflow.
+<br>
+<b>Bridging Design and Code with AI</b><br>
+While my background is rooted in multimedia and graphic design rather than software engineering, I frequently build custom utilities in Python and Adobe Illustrator to solve specific production bottlenecks. This is where AI completely changes the game:
+<br>
+<b>Translating Concepts to Code:</b> When I hit a repetitive roadblock in my workflow, I can explain the exact logic I need to an AI assistant. It helps me draft, test, and refine Python scripts tailored directly to Adobe’s scripting environment.
+<br>
+<b>Building the CORVUS_LUPUS Pipeline:</b> All my custom automation tools are unified under a shared engineering backbone. AI helps me maintain clean, modular, and scalable code across this stack, making it easy to deploy tools whether I'm working on personal brand concepts in my LoneWolf sandbox or handling commercial projects.
+<br>
+<b>Rapid Troubleshooting:</b> Debugging code used to mean digging through endless documentation forums. Now, AI acts as an instant sounding board to catch syntax errors, optimize loops, and ensure my scripts run smoothly without crashing production files.
+<br>
+<b>Why It Matters</b><br>
+Using AI to build custom tools isn't about replacing the creative process—it's about protecting it. By automating the mechanical, repetitive aspects of print and digital production, I can spend less time clicking menus and more time doing what matters most: creating compelling design work.</p>
+          </div>
+        </div>
+
+        <!-- Example Post 3 -->
+        <div class="blog-card">
+          <a href="javascript:void(0)" class="blog-card-image-link">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=2942&auto=format&fit=crop" alt="Color palettes and design sketches" class="blog-card-image">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="blog-card-category">Branding</span>
+              <span class="blog-card-date">September 28, 2023</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="javascript:void(0)">The Psychology of Color in Brand Identity</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              Color is more than just an aesthetic choice; it's a powerful communication tool. Let's explore how different hues evoke emotion and shape perception.
+            </p>
+            <a href="javascript:void(0)" class="blog-card-read-more">Read More →</a>
+          </div>
+          <!-- NOTE: This is the unique content for the 'Psychology of Color' post. -->
+          <div class="blog-card-full-content" style="display: none;">
+            <p>When designing a brand identity, color is one of the most critical decisions you'll make. It's the first thing a customer notices and it can instantly communicate a brand's personality, values, and tone. Why does red feel energetic while blue feels trustworthy?</p>
+            <p>This article delves into the psychology of color, exploring the emotional and cultural associations of different hues. We'll examine how major brands use color to influence perception and provide a practical guide for choosing the right palette for your next branding project.</p>
+          </div>
+        </div>
+        <!-- End of blog card block -->
+
+        <!-- Example Post 4 -->
+        <div class="blog-card">
+          <a href="javascript:void(0)" class="blog-card-image-link">
+            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=2940&auto=format&fit=crop" alt="Laptop with code on screen" class="blog-card-image">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="blog-card-category">Scripting</span>
+              <span class="blog-card-date">October 26, 2023</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="javascript:void(0)">how to use scripts to increase workflow</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              In the world of design, efficiency is key. By automating common actions in applications like Photoshop or After Effects, you can dramatically speed up your workflow.
+            </p>
+            <a href="javascript:void(0)" class="blog-card-read-more">Read More →</a>
+          </div>
+          <!-- NOTE: This is the unique content for the 'Scripting' post. -->
+          <div class="blog-card-full-content" style="display: none;">
+            <p>In the world of design, efficiency is key. Repetitive tasks can consume valuable creative time. This is where scripting comes in. By automating common actions in applications like Photoshop or After Effects, you can dramatically speed up your workflow.</p>
+            <p>This post is an introduction to using scripts to enhance productivity. We'll cover where to find pre-made scripts, how to install them, and look at a few examples of scripts that can save you hours of work on a project. No coding experience is required to get started!</p>
+          </div>
+        </div>
+        <!-- End of blog card block -->
+
+        <!-- Example Post 5 -->
+        <div class="blog-card">
+          <a href="javascript:void(0)" class="blog-card-image-link">
+            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2940&auto=format&fit=crop" alt="UI/UX design wireframes" class="blog-card-image">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="blog-card-category">UI/UX</span>
+              <span class="blog-card-date">November 05, 2023</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="javascript:void(0)">The Core Principles of User-Centric Design</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              Great design is more than just aesthetics; it's about creating intuitive and enjoyable experiences. Let's explore the fundamentals of putting the user first.
+            </p>
+            <a href="javascript:void(0)" class="blog-card-read-more">Read More →</a>
+          </div>
+          <!-- NOTE: This is the unique content for the 'UI/UX Principles' post. -->
+          <div class="blog-card-full-content" style="display: none;">
+            <p>User-centric design is a philosophy that places the user at the heart of the design process. It involves deep empathy for the people you're designing for, and a commitment to creating products that are not only functional but also delightful to use.</p>
+            <p>This article covers the key principles, including user research, persona creation, wireframing, prototyping, and the importance of iterative testing. By understanding and applying these concepts, you can create digital experiences that truly resonate with your audience.</p>
+          </div>
+        </div>
+        <!-- End of blog card block -->
+
+        <!-- Example Post 6 -->
+        <div class="blog-card">
+          <a href="javascript:void(0)" class="blog-card-image-link">
+            <img src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2874&auto=format&fit=crop" alt="Abstract AI generated art" class="blog-card-image">
+          </a>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="blog-card-category">Technology</span>
+              <span class="blog-card-date">November 12, 2023</span>
+            </div>
+            <h3 class="blog-card-title">
+              <a href="javascript:void(0)">How AI is Shaping the Future of Graphic Design</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              Artificial intelligence is no longer science fiction. It's a powerful new tool in the designer's toolkit. We'll look at how AI is changing creative workflows.
+            </p>
+            <a href="javascript:void(0)" class="blog-card-read-more">Read More →</a>
+          </div>
+          <!-- NOTE: This is the unique content for the 'AI in Design' post. -->
+          <div class="blog-card-full-content" style="display: none;">
+            <p>The rise of generative AI tools like Midjourney and DALL-E has sparked both excitement and debate in the design community. Are these tools a threat to creative jobs, or a powerful new form of assistance that can augment our abilities?</p>
+            <p>In this post, we explore the practical applications of AI in graphic design, from rapid ideation and asset generation to automating tedious tasks. We'll discuss how designers can embrace these technologies to enhance their creativity and efficiency, and what the future might hold for the human-AI creative partnership.</p>
+          </div>
+        </div>
+        <!-- End of blog card block -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Post Modal -->
+  <div id="blog-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" id="blog-modal-close-btn">&times;</span>
+      <h2 id="modal-blog-title" class="modal-blog-title"></h2>
+      <div id="modal-blog-content" class="modal-blog-content text-text-secondary">
+        <!-- Blog content will be injected here by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark-surface/50 py-12 border-t border-white/5">
+    <div class="container mx-auto px-8 max-w-7xl">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-text-muted"><p>&copy; 2025 Jason Bann. All rights reserved.</p></div>
+        <div class="text-text-muted"><p>This website is a working progress not all Links will Work Properly</p></div>
+        <div class="flex gap-6">
+          <a href="#" class="text-text-muted hover:text-primary-blue transition-colors">Privacy</a>
+          <a href="#" class="text-text-muted hover:text-primary-blue transition-colors">Terms</a>
+          <a href="#contact" class="text-text-muted hover:text-primary-blue transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Local JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

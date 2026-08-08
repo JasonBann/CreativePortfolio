@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Jason Bann Portfolio</title>
+  <meta name="description" content="Jason Bann's Multimedia & Graphic Design Portfolio - Showcasing Static, Motion Graphics, and Brand Design.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External Libraries -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Local Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html#hero" class="nav-logo">Jason Bann</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+        <li class="nav-item mobile-theme-switcher">
+            <div class="theme-switch-wrapper">
+                <button id="theme-toggle-btn-mobile" class="retro-theme-toggle-btn" aria-label="Toggle Retro Theme">
+                    <span>💻 RETRO-TECH</span>
+                </button>
+            </div>
+        </li>
+      </ul>
+      <div class="desktop-theme-switcher">
+        <div class="theme-switch-wrapper">
+            <button id="theme-toggle-btn" class="retro-theme-toggle-btn" aria-label="Toggle Retro Theme">
+                <span>💻 RETRO-TECH</span>
+            </button>
+        </div>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Gallery Hero Header -->
+  <section id="gallery-header" class="pt-28 pb-10 relative overflow-hidden">
+    <div class="parallax-bg-orb parallax-orb-cyan absolute w-96 h-96 -left-20 top-0 pointer-events-none opacity-20"></div>
+    <div class="parallax-bg-orb parallax-orb-purple absolute w-96 h-96 -right-20 top-10 pointer-events-none opacity-20"></div>
+    
+    <div class="container mx-auto px-8 max-w-7xl text-center relative z-10">
+      <div class="mono text-xs uppercase tracking-widest text-primary-blue mb-3 font-bold flex items-center justify-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-accent-cyan animate-pulse"></span>
+        EXHIBIT & REELS
+      </div>
+      <h1 class="text-4xl sm:text-5xl font-black mb-4 tracking-tight">Multimedia Gallery</h1>
+      <p class="text-text-secondary max-w-2xl mx-auto text-base sm:text-lg mb-8 leading-relaxed">
+        A curated collection of motion graphics, video reels, static poster art, and visual brand identity projects.
+      </p>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="inline-flex flex-wrap justify-center gap-6 sm:gap-10 py-3 px-6 rounded-2xl bg-surface/60 border border-border-color backdrop-blur-md shadow-lg text-sm">
+        <div class="flex items-center gap-2">
+          <span class="text-accent-cyan font-bold">✦ 7</span>
+          <span class="text-text-secondary">Featured Works</span>
+        </div>
+        <div class="w-px h-4 bg-border-color my-auto hidden sm:block"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-primary-blue font-bold">🎬 4K</span>
+          <span class="text-text-secondary">Video Reels</span>
+        </div>
+        <div class="w-px h-4 bg-border-color my-auto hidden sm:block"></div>
+        <div class="flex items-center gap-2">
+          <span class="text-accent-pink font-bold">🖨️ 300 DPI</span>
+          <span class="text-text-secondary">Print Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="pb-20">
+    <div class="container mx-auto px-8 max-w-7xl">
+
+      <!-- Interactive Filter Tabs -->
+      <div class="tabs-container flex-wrap justify-center gap-3 mb-10">
+        <button class="tab-btn active flex items-center gap-2" data-tab="all">
+          <span>✦ All Works</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-primary-blue/20 text-primary-blue font-mono font-bold">7</span>
+        </button>
+        <button class="tab-btn flex items-center gap-2" data-tab="static">
+          <span>🎨 Static & Print</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-surface text-text-secondary font-mono font-bold">4</span>
+        </button>
+        <button class="tab-btn flex items-center gap-2" data-tab="motion">
+          <span>🎬 Motion & Video</span>
+          <span class="text-xs px-2 py-0.5 rounded-full bg-surface text-text-secondary font-mono font-bold">3</span>
+        </button>
+      </div>
+
+      <!-- Unified Filterable Gallery Grid -->
+      <div class="gallery-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Item 1: Static - Event Poster -->
+        <div class="gallery-item group" data-category="static" data-type="image" data-source="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop">
+          <div class="relative overflow-hidden rounded-t-xl bg-elevated-color">
+            <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop" alt="Neon Soundwave Music Festival Poster" class="gallery-item-image group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-dark-surface/80 border border-accent-cyan/30 text-accent-cyan text-xs font-mono font-bold px-2.5 py-1 rounded-md backdrop-blur-md">
+              POSTER ART
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-surface/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-xs font-mono text-accent-cyan font-bold">Click to view full image →</span>
+            </div>
+          </div>
+          <div class="gallery-item-content">
+            <h3 class="gallery-item-title text-xl font-bold mb-1 group-hover:text-primary-blue transition-colors">Neon Soundwave Poster</h3>
+            <p class="gallery-item-desc text-text-secondary text-sm mb-3">Vibrant music festival event poster with custom gradient typography and geometric artwork.</p>
+            <div class="text-xs text-text-muted font-mono flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent-cyan"></span> Photoshop • Illustrator
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Static - Character Illustration -->
+        <div class="gallery-item group" data-category="static" data-type="image" data-source="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1000&auto=format&fit=crop">
+          <div class="relative overflow-hidden rounded-t-xl bg-elevated-color">
+            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=1000&auto=format&fit=crop" alt="Cyberpunk Character Illustration" class="gallery-item-image group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-dark-surface/80 border border-primary-purple/30 text-primary-purple text-xs font-mono font-bold px-2.5 py-1 rounded-md backdrop-blur-md">
+              ILLUSTRATION
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-surface/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-xs font-mono text-accent-cyan font-bold">Click to view full image →</span>
+            </div>
+          </div>
+          <div class="gallery-item-content">
+            <h3 class="gallery-item-title text-xl font-bold mb-1 group-hover:text-primary-blue transition-colors">Cyberpunk Character Concept</h3>
+            <p class="gallery-item-desc text-text-secondary text-sm mb-3">Digital painting and character design created for a futuristic game universe project.</p>
+            <div class="text-xs text-text-muted font-mono flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-purple"></span> Procreate • Photoshop
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Motion - Motion Graphics Reel -->
+        <div class="gallery-item group" data-category="motion" data-type="video" data-source="https://www.youtube.com/embed/hYv6sS7pS_8">
+          <div class="relative overflow-hidden rounded-t-xl bg-elevated-color">
+            <img src="https://i.ytimg.com/vi/hYv6sS7pS_8/maxresdefault.jpg" alt="2025 Motion Graphics Showcase" class="gallery-item-image group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-dark-surface/80 border border-accent-pink/30 text-accent-pink text-xs font-mono font-bold px-2.5 py-1 rounded-md backdrop-blur-md">
+              MOTION REEL
+            </div>
+            <div class="play-icon absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition-colors">
+              <div class="w-14 h-14 rounded-full bg-primary-blue/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 ml-0.5"><path d="M8 5v14l11-7z"></path></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item-content">
+            <h3 class="gallery-item-title text-xl font-bold mb-1 group-hover:text-primary-blue transition-colors">2025 Motion Design Reel</h3>
+            <p class="gallery-item-desc text-text-secondary text-sm mb-3">Fast-paced reel demonstrating kinetic typography, 2D vector animation, and video effects.</p>
+            <div class="text-xs text-text-muted font-mono flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent-pink"></span> After Effects • Premiere Pro
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Static - Movie Poster Concept -->
+        <div class="gallery-item group" data-category="static" data-type="image" data-source="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop">
+          <div class="relative overflow-hidden rounded-t-xl bg-elevated-color">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1000&auto=format&fit=crop" alt="Deep Space Movie Poster" class="gallery-item-image group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-dark-surface/80 border border-primary-blue/30 text-primary-blue text-xs font-mono font-bold px-2.5 py-1 rounded-md backdrop-blur-md">
+              CONCEPT ART
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-surface/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-xs font-mono text-accent-cyan font-bold">Click to view full image →</span>
+            </div>
+          </div>
+          <div class="gallery-item-content">
+            <h3 class="gallery-item-title text-xl font-bold mb-1 group-hover:text-primary-blue transition-colors">Deep Space Feature Poster</h3>
+            <p class="gallery-item-desc text-text-secondary text-sm mb-3">Cinematic movie poster concept featuring space photography compositions and key typography.</p>
+            <div class="text-xs text-text-muted font-mono flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-blue"></span> Cinema 4D • Photoshop
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Motion - Logo Animation -->
+        <div class="gallery-item group" data-category="motion" data-type="video" data-source="https://www.youtube.com/embed/u9-kU7gO1-I">
+          <div class="relative overflow-hidden rounded-t-xl bg-elevated-color">
+            <img src="https://i.ytimg.com/vi/u9-kU7gO1-I/maxresdefault.jpg" alt="Tech Brand Animated Logo Reveal" class="gallery-item-image group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-dark-surface/80 border border-accent-cyan/30 text-accent-cyan text-xs font-mono font-bold px-2.5 py-1 rounded-md backdrop-blur-md">
+              LOGO ANIMATION
+            </div>
+            <div class="play-icon absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition-colors">
+              <div class="w-14 h-14 rounded-full bg-primary-blue/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 ml-0.5"><path d="M8 5v14l11-7z"></path></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item-content">
+            <h3 class="gallery-item-title text-xl font-bold mb-1 group-hover:text-primary-blue transition-colors">Tech Brand Logo Reveal</h3>
+            <p class="gallery-item-desc text-text-secondary text-sm mb-3">Clean 2D vector logo animation sequence with sound design for a software brand identity.</p>
+            <div class="text-xs text-text-muted font-mono flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent-cyan"></span> After Effects • Audition
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Static - Brand Identity -->
+        <div class="gallery-item group" data-category="static" data-type="image" data-source="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1000&auto=format&fit=crop">
+          <div class="relative overflow-hidden rounded-t-xl bg-elevated-color">
+            <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?q=80&w=1000&auto=format&fit=crop" alt="Brand Identity & Print Design" class="gallery-item-image group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-dark-surface/80 border border-accent-pink/30 text-accent-pink text-xs font-mono font-bold px-2.5 py-1 rounded-md backdrop-blur-md">
+              BRANDING
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-surface/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span class="text-xs font-mono text-accent-cyan font-bold">Click to view full image →</span>
+            </div>
+          </div>
+          <div class="gallery-item-content">
+            <h3 class="gallery-item-title text-xl font-bold mb-1 group-hover:text-primary-blue transition-colors">Minimalist Brand Packaging</h3>
+            <p class="gallery-item-desc text-text-secondary text-sm mb-3">Comprehensive brand identity design including stationery, typography guide, and product packaging.</p>
+            <div class="text-xs text-text-muted font-mono flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-accent-pink"></span> Illustrator • InDesign
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Motion - 3D Product Teaser -->
+        <div class="gallery-item group" data-category="motion" data-type="video" data-source="https://www.youtube.com/embed/Ldu4Q-s50O4">
+          <div class="relative overflow-hidden rounded-t-xl bg-elevated-color">
+            <img src="https://i.ytimg.com/vi/Ldu4Q-s50O4/maxresdefault.jpg" alt="3D Product Render Teaser" class="gallery-item-image group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-3 left-3 bg-dark-surface/80 border border-primary-purple/30 text-primary-purple text-xs font-mono font-bold px-2.5 py-1 rounded-md backdrop-blur-md">
+              3D MOTION
+            </div>
+            <div class="play-icon absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/10 transition-colors">
+              <div class="w-14 h-14 rounded-full bg-primary-blue/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 ml-0.5"><path d="M8 5v14l11-7z"></path></svg>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item-content">
+            <h3 class="gallery-item-title text-xl font-bold mb-1 group-hover:text-primary-blue transition-colors">Futuristic Product Teaser</h3>
+            <p class="gallery-item-desc text-text-secondary text-sm mb-3">3D camera tracking, procedural material shaders, and cinematic lighting animation.</p>
+            <div class="text-xs text-text-muted font-mono flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary-purple"></span> Cinema 4D • Octane
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal / Lightbox -->
+  <div id="gallery-modal" class="modal">
+    <span class="modal-close" id="modal-close-btn">&times;</span>
+    <div class="modal-content" id="modal-content-container">
+      <!-- Content (image or video) will be injected here by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark-surface/50 py-12 border-t border-white/5">
+    <div class="container mx-auto px-8 max-w-7xl">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-text-muted"><p>&copy; 2025 Jason Bann. All rights reserved.</p></div>
+        <div class="text-text-muted"><p>Designed & Developed with Passion</p></div>
+        <div class="flex gap-6">
+          <a href="#" class="text-text-muted hover:text-primary-blue transition-colors">Privacy</a>
+          <a href="#" class="text-text-muted hover:text-primary-blue transition-colors">Terms</a>
+          <a href="index.html#contact" class="text-text-muted hover:text-primary-blue transition-colors">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Local JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

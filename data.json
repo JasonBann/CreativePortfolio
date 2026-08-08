@@ -1,0 +1,20 @@
+{
+  "experience": [
+    {
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sNj3-fvOkl1tITT2FqZOFNgZ45kliEGvFw&s",
+      "alt": "DBSigns logo",
+      "title": "Graphic designer",
+      "company": "DBSigns",
+      "period": "2024-Present",
+      "description": "Graphic Design, Large scale print production, CNC Routing, Vinyl cutting (plotter)"
+    },
+    {
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWMWtNoiDC5Ku1RYwpiAOpLNC1PmBwlDpcxA&s",
+      "alt": "Magos Media logo",
+      "title": "Student Intern",
+      "company": "Magos Media",
+      "period": "2023 (1 Month)",
+      "description": "Social Media Posts"
+    }
+  ]
+}
