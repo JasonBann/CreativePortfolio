@@ -929,6 +929,10 @@ h1:hover, h2:hover, h3:hover {
     padding: 1.5rem;
 }
 
+.project-content h3, .project-image h4 {
+    color: var(--text-primary);
+}
+
 /* Social Grid */
 .social-grid {
     display: flex;
