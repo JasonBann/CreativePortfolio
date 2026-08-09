@@ -33,6 +33,7 @@
       <ul class="nav-menu" id="nav-menu">
         <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
         <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#brands" class="nav-link">My Brands</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
         <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
         <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
@@ -197,7 +198,7 @@
       </div>
 
       <!-- Quick Interactive Stats Bar below hero -->
-      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl bg-surface/50 border border-primary-blue/15 backdrop-blur-md shadow-xl">
+      <!--<div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 p-5 rounded-2xl bg-surface/50 border border-primary-blue/15 backdrop-blur-md shadow-xl">
         <div class="text-center p-3 border-r border-text-primary/10 last:border-r-0">
           <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary-blue to-accent-cyan">100%</div>
           <div class="text-xs text-text-secondary mt-1 font-medium">Creative Precision</div>
@@ -214,7 +215,7 @@
           <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent-pink to-primary-blue">Interactive</div>
           <div class="text-xs text-text-secondary mt-1 font-medium">Digital Experiences</div>
         </div>
-      </div>
+      </div>-->
 
     </div>
   </section>
@@ -547,6 +548,126 @@
     </div>
   </section>
 
+  <!-- My Brands Section -->
+  <section id="brands" class="section relative overflow-hidden">
+    <div class="parallax-bg-orb parallax-orb-purple absolute w-[450px] h-[450px] -left-24 top-10 pointer-events-none" data-parallax-speed="-0.18"></div>
+    <div class="parallax-bg-orb parallax-orb-cyan absolute w-[450px] h-[450px] -right-24 bottom-10 pointer-events-none" data-parallax-speed="-0.15"></div>
+    
+    <div class="container mx-auto px-8 max-w-7xl relative z-10">
+      <h2 class="section-title">My Brands</h2>
+      
+      <!-- Intro Paragraph Explaining Dual Brand Architecture -->
+      <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-14">
+        <p class="text-text-secondary text-base sm:text-lg leading-relaxed">
+          I operate under a dual brand architecture to cleanly separate client-focused commercial services from my experimental creative playground. This split allows me to deliver polished, high-standard professional work for clients through <strong class="text-text-primary">Ravnyx Studios</strong>, while maintaining an unrestricted space for raw artistic exploration under <strong class="text-text-primary">LoneWolf</strong>.
+        </p>
+      </div>
+
+      <!-- Split 2-Column Brands Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+        
+        <!-- LoneWolf Brand Card -->
+        <div class="card p-6 sm:p-8 flex flex-col justify-between group fade-in">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+              <span class="px-3 py-1 bg-accent-pink/15 text-accent-pink border border-accent-pink/30 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+                🎨 Creative Freedom & Sandbox
+              </span>
+              <span class="text-xs font-mono text-text-muted">Personal Persona</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6 text-center sm:text-left">
+              <div class="w-32 h-32 sm:w-36 sm:h-36 bg-surface/80 border border-border-color rounded-2xl p-3 flex items-center justify-center flex-shrink-0 shadow-md group-hover:border-accent-pink/50 transition-colors">
+                <a href="LoneWolf.svg" target="_blank" class="w-full h-full flex items-center justify-center" title="View Full Logo">
+                  <img src="LoneWolf.svg" alt="LoneWolf Logo" class="w-full h-full object-contain filter drop-shadow-md" />
+                </a>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl sm:text-3xl font-black mb-1 text-text-primary group-hover:text-accent-pink transition-colors">LoneWolf</h3>
+                <h4 class="text-xs sm:text-sm font-bold text-accent-cyan uppercase tracking-wider mb-3">Personal Creative Brand</h4>
+                <p class="text-text-secondary text-sm sm:text-base leading-relaxed">
+                  My personal creative sandbox and artist persona. LoneWolf is dedicated to raw visual exploration, experimental motion graphics, 3D renders, kinetic typography, and unfiltered concept art free from commercial boundaries.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1 bg-primary-blue/15 text-primary-blue rounded-full text-xs font-mono">Animation</span>
+              <span class="px-3 py-1 bg-accent-pink/15 text-accent-pink rounded-full text-xs font-mono">Experimental</span>
+              <span class="px-3 py-1 bg-accent-cyan/15 text-accent-cyan rounded-full text-xs font-mono">3D & Motion</span>
+            </div>
+          </div>
+
+          <!-- QR Code Space & Linktree CTA -->
+          <div class="pt-6 border-t border-border-color/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-20 h-20 bg-white p-1.5 rounded-xl shadow-md border border-border-color flex-shrink-0 flex items-center justify-center">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://linktr.ee/lonewolf_2077" alt="LoneWolf Linktree QR Code" class="w-full h-full object-contain" />
+              </div>
+              <div>
+                <span class="text-xs font-mono uppercase tracking-wider text-text-muted block mb-0.5">Linktree QR Code</span>
+                <span class="text-xs text-text-secondary block font-medium">Scan to connect with LoneWolf</span>
+              </div>
+            </div>
+            <a href="https://linktr.ee/lonewolf_2077" target="_blank" class="hero-btn hero-btn-secondary text-xs sm:text-sm py-2.5 px-4 whitespace-nowrap w-full sm:w-auto text-center">
+              Visit Linktree ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Ravnyx Studios Brand Card -->
+        <div class="card p-6 sm:p-8 flex flex-col justify-between group fade-in">
+          <div>
+            <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+              <span class="px-3 py-1 bg-primary-blue/15 text-primary-blue border border-primary-blue/30 rounded-full text-xs font-mono font-bold tracking-wider uppercase">
+                💼 Professional & Client Work
+              </span>
+              <span class="text-xs font-mono text-text-muted">Freelance Agency</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6 text-center sm:text-left">
+              <div class="w-32 h-32 sm:w-36 sm:h-36 bg-surface/80 border border-border-color rounded-2xl p-3 flex items-center justify-center flex-shrink-0 shadow-md group-hover:border-primary-blue/50 transition-colors">
+                <a href="Ravnyx.svg" target="_blank" class="w-full h-full flex items-center justify-center" title="View Full Logo">
+                  <img src="Ravnyx.svg" alt="Ravnyx Studios Logo" class="w-full h-full object-contain filter drop-shadow-md" />
+                </a>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-2xl sm:text-3xl font-black mb-1 text-text-primary group-hover:text-primary-blue transition-colors">Ravnyx Studios</h3>
+                <h4 class="text-xs sm:text-sm font-bold text-accent-cyan uppercase tracking-wider mb-3">Professional Creative Brand</h4>
+                <p class="text-text-secondary text-sm sm:text-base leading-relaxed">
+                  My official client-facing studio offering end-to-end multimedia design services. Ravnyx Studios delivers high-precision print graphics, brand identities, promotional video edits, and custom digital marketing solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-3 py-1 bg-primary-blue/15 text-primary-blue rounded-full text-xs font-mono">Branding</span>
+              <span class="px-3 py-1 bg-accent-pink/15 text-accent-pink rounded-full text-xs font-mono">Print Media</span>
+              <span class="px-3 py-1 bg-accent-cyan/15 text-accent-cyan rounded-full text-xs font-mono">Commercial Edits</span>
+            </div>
+          </div>
+
+          <!-- QR Code Space & Linktree CTA -->
+          <div class="pt-6 border-t border-border-color/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-20 h-20 bg-white p-1.5 rounded-xl shadow-md border border-border-color flex-shrink-0 flex items-center justify-center">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://linktr.ee/ravnyxstudios" alt="Ravnyx Studios Linktree QR Code" class="w-full h-full object-contain" />
+              </div>
+              <div>
+                <span class="text-xs font-mono uppercase tracking-wider text-text-muted block mb-0.5">Linktree QR Code</span>
+                <span class="text-xs text-text-secondary block font-medium">Scan to connect with Ravnyx</span>
+              </div>
+            </div>
+            <a href="https://linktr.ee/ravnyxstudios" target="_blank" class="hero-btn hero-btn-secondary text-xs sm:text-sm py-2.5 px-4 whitespace-nowrap w-full sm:w-auto text-center">
+              Visit Linktree ↗
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Interactive Gallery Callout Banner -->
   <div class="my-4 py-6 px-6 bg-surface/60 border-y border-border-color backdrop-blur-md">
     <div class="container mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
@@ -566,54 +687,6 @@
     <div class="container mx-auto px-8 max-w-7xl relative z-10">
       <h2 class="section-title">Featured Work</h2>
       <div class="projects-grid">
-        
-       <div class="project-card fade-in">
-          <div class="project-image bg-gradient-to-br from-purple-600/20 to-blue-600/20 flex items-center justify-center">
-            <div class="text-center">
-              <div class="w-40 h-40 bg-white/5 rounded-2xl flex items-center justify-center mb-4 mx-auto overflow-hidden p-2">
-                <a href="LoneWolf.svg" target="_blank" class="flex items-center justify-center w-full h-full">
-                  <img src="LoneWolf.svg" alt="LoneWolf Logo" class="w-full h-full object-contain text-white" />
-                </a>
-              </div>
-              <h4 class="text-white font-semibold">Personal Creative Brand</h4>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="text-xl font-semibold  mb-2">LoneWolf</h3>
-            <p class="text-text-secondary mb-4">My personal Creative brand and persona, a Creative sandbox where I experiment with different styles and concepts</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-primary-blue/20 text-primary-blue rounded-full text-xs">Animation</span>
-              <span class="px-3 py-1 bg-accent-pink/20 text-accent-pink rounded-full text-xs">Multimedia</span>
-              <span class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan rounded-full text-xs">Experimental</span>
-            </div>
-            <a href="https://linktr.ee/lonewolf_2077" class="text-primary-blue hover:text-accent-cyan transition-colors">View Project →</a>
-            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
-          </div>
-        </div>
-
-        <div class="project-card fade-in">
-          <div class="project-image bg-gradient-to-br from-purple-600/20 to-blue-600/20 flex items-center justify-center">
-            <div class="text-center">
-              <div class="w-40 h-40 bg-white/5 rounded-2xl flex items-center justify-center mb-4 mx-auto overflow-hidden p-2">
-                <a href="Ravnyx.svg" target="_blank" class="flex items-center justify-center w-full h-full">
-                  <img src="Ravnyx.svg" alt="LoneWolf Logo" class="w-full h-full object-contain text-white" />
-                </a>
-              </div>
-              <h4 class="text-white font-semibold">Professional Creative Brand</h4>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="text-xl font-semibold  mb-2">Ravnyx Studios</h3>
-            <p class="text-text-secondary mb-4">This is my freelancing brand where I offer my services to clients and do all my professional work</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 bg-primary-blue/20 text-primary-blue rounded-full text-xs">Print</span>
-              <span class="px-3 py-1 bg-accent-pink/20 text-accent-pink rounded-full text-xs">Multimedia</span>
-              <span class="px-3 py-1 bg-accent-cyan/20 text-accent-cyan rounded-full text-xs">Branding</span>
-            </div>
-            <a href="https://linktr.ee/ravnyxstudios" class="text-primary-blue hover:text-accent-cyan transition-colors">View Project →</a>
-            <a href="error.html" class="text-primary-blue hover:text-accent-cyan transition-colors ml-4">Case Study →</a>
-          </div>
-        </div>
 
         <div class="project-card fade-in">
           <div class="project-image bg-gradient-to-br from-green-600/20 to-teal-600/20 flex items-center justify-center">
