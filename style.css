@@ -703,9 +703,9 @@ h1:hover, h2:hover, h3:hover {
 }
 
 .badge-ae { top: -10px; left: -15px; border-color: var(--primary-purple); color: var(--primary-purple); animation-delay: 0s; }
-.badge-ai { top: 40px; right: -25px; border-color: var(--accent-cyan); color: var(--accent-cyan); animation-delay: -1.5s; }
-.badge-ps { bottom: 50px; left: -30px; border-color: var(--primary-blue); color: var(--primary-blue); animation-delay: -3s; }
-.badge-3d { bottom: -15px; right: 15px; border-color: var(--accent-pink); color: var(--accent-pink); animation-delay: -4.5s; }
+.badge-ai { top: 25px; right: -20px; border-color: var(--accent-cyan); color: var(--accent-cyan); animation-delay: -1.5s; }
+.badge-ps { bottom: 55px; left: -30px; border-color: var(--primary-blue); color: var(--primary-blue); animation-delay: -3s; }
+.badge-3d { bottom: 55px; right: -25px; border-color: var(--accent-pink); color: var(--accent-pink); animation-delay: -4.5s; }
 
 @keyframes floatBadge {
     0% { transform: translateY(0px) rotate(0deg); }
